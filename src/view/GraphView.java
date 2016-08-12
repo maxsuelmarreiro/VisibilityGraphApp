@@ -117,7 +117,6 @@ public class GraphView extends javax.swing.JPanel {
         //draw pontos
         for (Vertice p : PontosClick) {
             g.fillOval((int) (p.getX() * xx) - 5, (int) (cst - p.getY() * xx) - 5, 10, 10);
-            //g.drawLine((int)p.getX()*xx, (int) (cst-p.getY()*xx), 0, 0);
         }
     }
 
