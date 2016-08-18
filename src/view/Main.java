@@ -7,7 +7,6 @@ package view;
 
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.util.Scanner;
 import javax.swing.JFileChooser;
 import static javax.swing.JOptionPane.showMessageDialog;
 
@@ -17,7 +16,8 @@ import static javax.swing.JOptionPane.showMessageDialog;
  */
 public class Main extends javax.swing.JFrame {
 
-    JFileChooser fc = new JFileChooser();;
+    JFileChooser fc = new JFileChooser();
+
     public int altura;
     public boolean inicialfinal = false;
 
@@ -276,7 +276,7 @@ public class Main extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         File workingDirectory = new File(System.getProperty("user.dir"));
         fc.setCurrentDirectory(workingDirectory);
-        
+
         int returnVal = fc.showOpenDialog(this);
 
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -287,7 +287,7 @@ public class Main extends javax.swing.JFrame {
 
         } else {
         }
-        
+
         graphView2.repaint();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -358,7 +358,7 @@ public class Main extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
 
