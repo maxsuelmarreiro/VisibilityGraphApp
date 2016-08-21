@@ -9,6 +9,7 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import javax.swing.JFileChooser;
 import static javax.swing.JOptionPane.showMessageDialog;
+import xml.OpenStreetMap;
 
 /**
  *
